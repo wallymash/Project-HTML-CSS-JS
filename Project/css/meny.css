@@ -1,0 +1,86 @@
+.outerContainer_meny {
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.innerContainer_meny {
+  width: 90%;
+  height: 70%;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid white;
+}
+
+.element {
+  flex: 1 0 35%; /* Hvert element tar nå max 35% av containeren. Dette er for å ha max 2 elementer per rad. */
+  width: 400px;
+  text-align: center;
+  height: 650px;
+  position: relative;
+  border-bottom: 1px solid white;
+}
+
+.textOver_meny {
+  font-family: Arial;
+  color: #f4f4f4;
+  font-size: 30pt;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.pic_meny {
+  width: 400px;
+  height: 50%;
+  margin: 20px;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 5%;
+}
+
+@media (max-width: 580px) {
+  .outerContainer_meny {
+    margin-left: 0%;
+    margin-right: 1%;
+  }
+
+  .pic_meny {
+    margin: 0px;
+    margin-top: 15px;
+  }
+}
+
+.textUnder_meny {
+  font-family: "Times New Roman", Times, serif;
+  color: #f4f4f4;
+  font-size: 13pt;
+  line-height: 30px;
+  display: flex;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.text_allergies {
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

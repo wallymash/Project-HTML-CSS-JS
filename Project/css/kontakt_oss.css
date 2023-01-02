@@ -1,0 +1,83 @@
+.form {
+  color: #f4f4f4;
+  width: fit-content;
+  margin: 40px auto;
+  background: #383838;
+  font-weight: bold;
+}
+
+.form-inside {
+  padding: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.form-inside label input {
+  display: block;
+  margin-left: 25%;
+  margin-bottom: 10px;
+  min-height: 20pt;
+  width: 50%;
+}
+
+.form-inside label textarea {
+  display: block;
+  margin-left: 15%;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+#formFooter {
+  width: 100%;
+  height: auto;
+}
+
+#formFooter p {
+  position: relative;
+  background: #f4f4f4;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 20px 20px;
+}
+
+#button,
+#reset {
+  padding: 8px 18px;
+  color: black;
+  background-color: white;
+  border: 1px solid #12445e;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13pt;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#button:hover,
+#reset:hover {
+  background: #28739e;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+textarea:invalid {
+  border: 1px solid red;
+}
+
+textarea:valid {
+  border: 1px solid green;
+}
+
+input::-webkit-outer-spin-button, /* fjerner tellere på nummer inputs */ 
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

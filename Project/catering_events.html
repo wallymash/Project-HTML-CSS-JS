@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Catering & Events</title>
+        <link rel="stylesheet" href="css/styling.css">
+        <link rel="stylesheet" href="css/catering_events.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body class="body-cateringevents" onload="modularitet()">
+
+        <div id="header"> </div>
+
+        <div id="content">
+
+            <h1 id="headline"> Catering & Events</h1>
+
+            <div class="container-cateringevents">
+                <img id="cateringpic-cateringevents" src="Bilder/coge3.png" alt="Bilde av catering">
+                <div class="textboks-cateringevents">
+                    <p> Dersom du skal arrangere bryllup, bursdag eller andre events, kan vi hjelpe deg med en nydelig
+                        matopplevelse! Ta kontakt under for å få tilsendt pris og annen informasjon:)</p>
+                </div>
+            </div>
+
+            <div class="form-cateringevents">
+                <form method="post" onsubmit="return SendMelding()">
+                    <table>
+                        <tr>
+                            <th>Ditt navn: </th>
+                            <th>Telefonnummer: </th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="name-cateringevents" placeholder="Ola Nordmann" required ></td>
+                            <td><input type="number" id="number-cateringevents" placeholder="8-sifret tlfnummer" min="10000000" max="99999999" required></td>
+                        </tr>
+                        <tr>
+                            <th> Email: </th>
+                            <th> Dato for henting: </th>
+                        </tr>
+                        <tr>
+                            <td><input type="email" name="email" required placeholder="dinemail@mail.com" /></td>
+                            <td><input id="date-cateringevents" type="date" name="birthdate" required min="2021-11-11" /> </td>
+                        </tr>
+                        <tr>
+                            <th id="food-dishes"> Matretter:</th>
+                            <th> </th>
+                            <!--  Kommer opp i validator at det mangler en th, så la til en tom <th> over:)    -->
+                        </tr>
+                        <tr>
+                            <td> Papri Chaat <input type="checkbox"  class="checkbox" name="matretter" value="Papri Chaat" /></td>
+                            <td> Fruit Chaat <input type="checkbox" class="checkbox" name="matretter" value="Fruit Chaat" /></td>
+                        </tr>
+                        <tr>
+                            <td> Alo Tikki Chaat <input type="checkbox" class="checkbox" name="matretter" value="Alo Tikki Chaat" /></td>
+                            <td> Vårrull m/ Kylling <input type="checkbox" class="checkbox" name="matretter" value="Vårrull m/ Kylling" /></td>
+                        </tr>
+                        <tr>
+                            <td> Vårrull m/ biff <input type="checkbox" class="checkbox" name="matretter" value="Vårrull m/ biff" /></td>
+                            <td> Kylling Sandwich <input type="checkbox" class="checkbox" name="matretter" value="Kylling Sandwich" /></td>
+                        </tr>
+                        <tr>
+                            <td> Paani Puri <input type="checkbox"  class="checkbox" name="matretter" value="Paani Puri" /></td>
+                            <td> Dhai Bhalla <input type="checkbox"  class="checkbox" name="matretter" value="Dhai Bhalla" /></td>
+                        </tr>
+                        <tr>
+                            <th>Antall personer? </th>
+                            <th>Annen informasjon: </th>
+                        </tr>
+                        <tr>
+                            <td><input type="number" id="persons" min="10" placeholder="Min 10 pers" required></td>
+                            <td><input type="text" id="info" placeholder="Skriv inn din informasjon" > </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="submit" value="Send" id="button"> </td>
+                            <td> <input id="reset" type="reset" name="reset" value="Nullstill"> </td>
+                        </tr>
+
+
+                    </table>
+                </form>
+            </div>
+
+
+        </div>
+
+        <div id="footer"> </div>
+
+        <script src="scripts/modularity.js"></script>
+        <script src="scripts/formValidation-cateringevents.js"></script>
+        <script src="scripts/rollOverMenu.js"></script>
+        <script src= "scripts/changeDropdownImage.js"></script>
+    </body>
+
+</html>

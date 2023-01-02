@@ -1,0 +1,53 @@
+.questions_and_answers {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.question {
+  margin-bottom: 2px;
+  background-color: #383838;
+  color: #f4f4f4;
+  cursor: pointer;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  font-size: 13pt;
+}
+
+.aktiv {
+  background-color: black;
+}
+
+button.question.aktiv + .answer {
+  /* Viser svaret til spørsmålet som har blitt trigget etter å ha blitt trykket på. 
+  Skjules ved å trykke på spørsmålet på nytt. */
+  /* Er koblet sammen med hiddenanswer.js */
+  display: flex;
+}
+
+.question:hover {
+  background-color: black;
+}
+
+.answer {
+  background-color: #f4f4f4;
+  overflow: hidden;
+  display: none;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.button:after {
+  content: "\02795"; /* Unique unicode for (+) */
+  color: #f4f4f4;
+  float: right;
+}
+
+.aktiv .button:after {
+  content: "\2796"; /* Unique unicode for (-) */
+  color: #f4f4f4;
+  float: right;
+}
